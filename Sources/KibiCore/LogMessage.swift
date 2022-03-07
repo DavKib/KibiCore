@@ -1,6 +1,6 @@
 import Foundation
 
-struct LogMessage {
+public struct LogMessage {
     
     private static var destination: LogDestination = .console
     private static var format: LogFormat = .full
