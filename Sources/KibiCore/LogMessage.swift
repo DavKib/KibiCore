@@ -1,3 +1,5 @@
+import Foundation
+
 struct LogMessage {
     
     private static var destination: LogDestination = .console

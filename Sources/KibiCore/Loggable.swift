@@ -1,7 +1,9 @@
 import Foundation
 
 
-public protocol Loggable { 
+public protocol Loggable { }
+
+extension Loggable { 
     
     public func log( to destination: LogMessage.LogDestination? = nil,
               format: LogMessage.LogFormat? = nil,
