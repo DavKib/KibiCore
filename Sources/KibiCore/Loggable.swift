@@ -5,7 +5,7 @@ public protocol Loggable { }
 
 extension Loggable { 
     
-    public func log( to destination: LogMessage.LogDestination? = nil,
+    func log( to destination: LogMessage.LogDestination? = nil,
               format: LogMessage.LogFormat? = nil,
               _ input: String, 
               _ file: String = #file, 
@@ -21,7 +21,7 @@ extension Loggable {
         message.log()
     }
     
-    public func log<I: Error>( to destination: LogMessage.LogDestination? = nil,
+    func log<I: Error>( to destination: LogMessage.LogDestination? = nil,
                         format: LogMessage.LogFormat? = nil,
                         _ input: I, 
                         _ file: String = #file, 
