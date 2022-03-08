@@ -5,23 +5,23 @@ public struct LogMessage {
     private static var destination: LogDestination = .console
     private static var format: LogFormat = .full
     
-    enum LogFormat {
+    public enum LogFormat {
         case short 
         case full
     }
     
-    enum LogDestination: Int {
+    public enum LogDestination: Int {
         case console
         case debug
         case file
     }
     
-    var destination: LogDestination?
-    var file: String
-    var function: String
-    var line: Int
-    var input: String
-    var format: LogFormat?
+    public var destination: LogDestination?
+    public var file: String
+    public var function: String
+    public var line: Int
+    public var input: String
+    public var format: LogFormat?
     
     private var castedFormat: LogFormat { format ?? Self.format }
     private var castedDestination: LogDestination { destination ?? Self.destination }
