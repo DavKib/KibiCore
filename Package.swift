@@ -21,8 +21,5 @@ let package = Package(
         .target(
             name: "KibiCore",
             dependencies: []),
-        .testTarget(
-            name: "KibiCoreTests",
-            dependencies: ["KibiCore"]),
     ]
 )
